@@ -10,14 +10,14 @@ pip install .
 ```python
 import sys
 sys.path.append('/path/to/error_handler_decorator.py/file')
-from error_handler_decorator import ErrorHandler
+from errorhandlerdecorator import ErrorHandler
 ```
 
 ## Быстрый старт
 Пример использования: пусть имеется функция divide_numbers, которая возвращает результат деления двух чисел. Сначала вызываем ее с аргументами 6 и 3, затем - с 6 и 0 (результат - ошибка). Для логирования работы функции divide_numbers достаточно добавить перед ней @eh.trace:
 
 ```python
-from error_handler_decorator import ErrorHandler
+from errorhandlerdecorator import ErrorHandler
 eh = ErrorHandler()
 
 @eh.trace
